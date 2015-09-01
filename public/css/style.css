@@ -1,0 +1,341 @@
+body {
+	font: 1em Arial;
+	text-align: center;
+}
+.general_wrapper {
+	background-image: url('../images/bgs/pattern_bg.jpg');
+	height: auto;
+	margin: 0 auto;
+	max-width: 500px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 825px;
+}
+section {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 785px;
+}
+.visible {
+	z-index: 2;
+	display: block;
+	top: 40px;
+	-webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+	transition: all 2s;
+}
+.hidden {
+	z-index: 1;
+	top:826px;
+	opacity: 0;
+	-webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+	transition: all 2s;
+}
+.fixed_header {
+	color: #fff;
+	font-size: 12px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+section header {
+	margin: 0 auto 14px;
+	width: 91%;
+}
+.titulo_secciones {
+	background: rgba(157, 157, 157, 0.5);
+	color: #fff;
+	padding: 3% 10%;
+	text-align: center;
+	width: 80%;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	font-size: 20px;
+}
+.contenedor_seccion {
+	margin: 0 auto;
+	width: 91%;
+}
+.contenedor_seccion .participantes {
+	width: 100%;
+}
+.contenedor_seccion .participantes .participante {
+	background-color: #e200e2;
+	margin-bottom: 2px;
+}
+.contenedor_seccion .participantes .participante.oponente {
+	background-color: #3f95fc;
+	margin-bottom: 0px;
+}
+.contenedor_seccion .participantes .participante .avatar {
+	display: inline-block;
+	width: 15%;
+}
+.contenedor_seccion .participantes .participante .avatar img {
+	width: 95%;
+	padding: 5px 0 0 5px;
+}
+.contenedor_seccion .participantes .participante .nombre,
+.contenedor_seccion .participantes .participante .puntos {
+	display: inline-block;
+	padding: 5.5% 0;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.contenedor_seccion .participantes .participante .nombre {
+	width: 33%;
+}
+.contenedor_seccion .participantes .participante .puntos {
+	text-align: center;
+	width: 50.2%;
+	background-color: #000;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 18px 48px;
+}
+.contenedor_seccion .participantes .participante .nombre p,
+.contenedor_seccion .participantes .participante .puntos p {
+	color: #fff;
+	font-weight: 700;
+	padding-left: 10px;
+}
+.contenedor_seccion .participantes .participante .puntos p {
+	background-color: #000;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	padding: 10px 0;
+}
+.contenedor_seccion .contenedor_inferior {
+	background-color: #e6e6e6; 
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	height: auto;
+	height: 699px;
+	width: 100%;
+	padding: 20px 0 0 0;
+	position: relative;
+}
+/*Preguntas*/
+.preguntas .contenedor_inferior.ya_respondio .contenedor_pregunta {
+}
+.preguntas .contenedor_inferior.ya_respondio ul.opciones_respuestas {
+	-webkit-animation: correr_preguntas 2s; /* Chrome, Safari, Opera */
+	animation: correr_preguntas 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes correr_cont_preguntas
+{
+from {left:68px;}
+to {left:500px;}
+}
+/* Standard syntax */
+@keyframes correr_cont_preguntas
+{
+from {left:68px;}
+to {left:500px;}
+}
+@-webkit-keyframes correr_preguntas
+{
+from {left:68px;}
+to {left:500px;}
+}
+/* Standard syntax */
+@keyframes correr_preguntas
+{
+from {left:68px;}
+to {left:500px;}
+}
+.contenedor_inferior .contenedor_pregunta {
+	background: url('../images/bgs/bg_preguntas.png') no-repeat 0 0;
+	height: 130px;
+	left: 43px;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	position: absolute;
+	text-align: center;
+	top: 70px;
+	width: 80%;
+}
+.contenedor_inferior .contenedor_pregunta p {
+	font-weight: 700;
+}
+ul.opciones_respuestas {
+	width: 69%;
+	margin: 20px auto 0;
+	list-style: none;
+position: absolute;
+top: 260px;
+left: 68px;
+}
+ul.opciones_respuestas li {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 7px 0;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 700;
+}
+ul.opciones_respuestas li.correcta {
+	background-color: #8abc00;
+}
+ul.opciones_respuestas li.incorrecta {
+	background-color: #ba0017;
+}
+/*categorias*/
+.entretenimiento .contenedor_seccion .contenedor_inferior.categorias {
+	background-color: #00c5f4;
+}
+.deportes .contenedor_seccion .contenedor_inferior.categorias {
+	background-color: #ff8b1a;
+}
+.geografia .contenedor_seccion .contenedor_inferior.categorias {
+	background-color: #3e94fb;
+}
+.arte .contenedor_seccion .contenedor_inferior.categorias {
+	background-color: #e100e1;
+}
+.ciencia .contenedor_seccion .contenedor_inferior.categorias {
+	background-color: #82ae33;
+}
+.entretenimiento .contenedor_seccion .contenedor_inferior.categorias .img_categoria,
+.deportes .contenedor_seccion .contenedor_inferior.categorias .img_categoria,
+.geografia .contenedor_seccion .contenedor_inferior.categorias .img_categoria,
+.arte .contenedor_seccion .contenedor_inferior.categorias .img_categoria,
+.ciencia .contenedor_seccion .contenedor_inferior.categorias .img_categoria {
+	background: url('../images/categorias/entretenimiento.png') no-repeat 0 0;
+	width: 100%;
+	height: 307px;
+}
+.deportes .contenedor_seccion .contenedor_inferior.categorias .img_categoria {
+	background: url('../images/categorias/deporte.png') no-repeat 0 0;
+}
+.geografia .contenedor_seccion .contenedor_inferior.categorias .img_categoria {
+	background: url('../images/categorias/geografia.png') no-repeat 0 0;
+}
+.arte .contenedor_seccion .contenedor_inferior.categorias .img_categoria {
+	background: url('../images/categorias/arte.png') no-repeat 0 0;
+}
+.ciencia .contenedor_seccion .contenedor_inferior.categorias .img_categoria {
+	background: url('../images/categorias/ciencia.png') no-repeat 0 0;
+}
+.contenedor_seccion .contenedor_inferior .categorias {
+	width: 70%;
+	margin: 20px auto 0;
+	height: auto;
+	text-align: center;
+}
+.categoria_seleccionda.entretenimiento .categorias h1:before {
+   content: "Entretenimiento";
+}
+.categoria_seleccionda.deportes .categorias h1:before {
+   content: "Deportes";
+}
+.categoria_seleccionda.geografia .categorias h1:before {
+   content: "Geografia";
+}
+.categoria_seleccionda.arte .categorias h1:before {
+   content: "Arte";
+}
+.categoria_seleccionda.ciencia .categorias h1:before {
+   content: "Ciencia";
+}
+.categoria_seleccionda .categorias h1 {
+	text-align: center;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+.categoria_seleccionda .categorias img {
+	width: 100%;
+}
+.categoria_seleccionda .categorias button.jugar,
+.resultado button.total_puntos {
+	background-color: #ff8c1a;
+	border-radius: 7px;
+	width: 140px;
+	border: 2px solid #cfcfcf;
+	color: #fff;
+	font-size: 20px;
+	padding: 4px;
+	cursor: pointer;
+	margin: 20px 0;
+}
+/*Modal Resultado*/
+.contenedor_seccion .contenedor_inferior.resultado {
+	background-color: #fff;
+}
+.resultado h1.titulo_resultado {
+	font-size: 30px;
+	margin: 20px 0 10px;
+}
+.resultado.ganaste h1.titulo_resultado:before {
+	content: "Ganaste";
+}
+.resultado.perdiste h1.titulo_resultado:before {
+	content: "Perdiste";
+}
+.resultado button.total_puntos {
+	width: 215px;
+}
+/*Esperando*/
+.inicio h1.titulo_espera:before {
+	content: "Esperando a que se una un oponente";
+}
+.esperar h1.titulo_espera:before {
+	content: "Esperando a que su oponente termine su turno";
+}
+.espera {
+	z-index: 3;
+}
+.espera h1.titulo_espera {
+	color: #fff;
+	font-size: 20px;
+	margin-top: 40px;
+}
+.contenedor_inferior.inicio,
+.contenedor_inferior.esperar {
+	background-color: #000;
+	opacity: 0.9;
+}
+.espera .contenedor_seccion .contenedor_inferior {
+	height: 765px;
+}
+.espera .img_animada {
+	-webkit-animation: rotar_imagen 5s; /* Chrome, Safari, Opera */
+	animation: rotar_imagen 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotar_imagen
+{ 
+	100% { -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg);}
+}
+/* Standard syntax */
+@keyframes rotar_imagen
+{ 	
+	100% { transform:rotate(360deg);}
+}
+/*Footer*/
+footer {
+	color: #fff;
+	font-size: 12px;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	display: inline-block;
+	margin:auto;
+	position: relative;
+	background-color: #000;
+}

@@ -1,0 +1,76 @@
+﻿{
+    "questionDB": [
+        {
+            "questionId": 1,
+            "question": "Qué jugador de futbol no fue convocado por Sabella para el mundial 2014?",
+            "correct": "3",
+            "responses": 
+                [
+                    {"option": "Messi"},
+                    {"option": "Agüero"},
+                    {"option": "Tevez"},
+                    {"option": "Higuain"}
+                ]
+        },
+        {
+            "questionId": 2,
+            "question": "Que país está más al norte?",
+            "correct": "3",
+            "responses": 
+                [
+                    {"option": "Argentina"},
+                    {"option": "Mexico"},
+                    {"option": "Canada"},
+                    {"option": "Estados Unidos"}
+                ]
+        },
+        {
+            "questionId": 3,
+            "question": "Cuanto dura el orgasmo del chancho?",
+            "correct": "1",
+            "responses": 
+                [
+                    {"option": "30 minutos"},
+                    {"option": "30 segundos"},
+                    {"option": "3 segundos"},
+                    {"option": "Ninguna de las anteriores"}
+                ]
+        },
+        {
+            "questionId": 4,
+            "question": "Quien es el actor principal de Vovler al Futuro?",
+            "correct": "4",
+            "responses": 
+                [
+                    {"option": "Brad Pitt"},
+                    {"option": "George Clooney"},
+                    {"option": "Emmet Brown"},
+                    {"option": "Michel J Fox"}
+                ]
+        },
+        {
+            "questionId": 5,
+            "question": "Hasta donde se lavan la cara los pelados?",
+            "correct": "1",
+            "responses": 
+                [
+                    {"option": "No se sabe"},
+                    {"option": "Hasta las cejas"},
+                    {"option": "Hasta la nuca"},
+                    {"option": "Pasando la frente"}
+                ]
+        },
+        {
+            "questionId": 6,
+            "question": "Tengo el corazón...",
+            "correct": "4",
+            "responses": 
+                [
+                    {"option": "...en llamas"},
+                    {"option": "...con un infarto"},
+                    {"option": "...roto"},
+                    {"option": "...con agujeritos"}
+                ]
+        }
+    ]
+}

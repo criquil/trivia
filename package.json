@@ -1,0 +1,17 @@
+{
+  "name": "HTML5Trivia2",
+  "version": "0.0.0",
+  "description": "HTML5Trivia2",
+  "main": "app.js",
+  "author": {
+    "name": "omar.alfredo.guntaue",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^3.4.4",
+    "stylus": "*",
+    "ejs": "~1.0.0",
+    "websocket": "~1.0.8",
+    "socket.io": "~0.9.16"
+  }
+}

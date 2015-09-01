@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Aplicaci&oacute;n Preguntas y Respuestas HTML5 - Canvas</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="general_wrapper">
+        <header class="fixed_header">Juego - HTML5 - Canvas - CSS3 - JS</header>
+        <section id="sectionEspera" class="visible espera">
+            <div class="contenedor_seccion">
+                <div class="contenedor_inferior inicio esperar">
+                    <div class="categorias">
+                        <img class="img_animada" src="images/icons/ganaste.png" alt="" title="" border="0" />
+                        <h1 class="titulo_espera"></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionRueda" class="rueda visible">
+            <header>
+                <h1 class="titulo_secciones">Rueda de Preguntas</h1>
+            </header>
+            <div class="contenedor_seccion">
+                <div class="participantes">
+                    <div class="participante">
+                        <div class="avatar"><img src="images/icons/avatar_lady.png" border="0"></div>
+                        <div class="nombre"><p>Yo</p></div>
+                        <div class="puntos"><p>Puntos: <p class="myPoints">0</p></div>
+                    </div>
+                    <div class="participante oponente">
+                        <div class="avatar"><img src="images/icons/avatar_boy.png" border="0"></div>
+                        <div class="nombre"><p>Oponente:</p></div>
+                        <div class="puntos"><p>Puntos: <p class="myOpponentPoints">0</p></p></div>
+                    </div>
+                </div>
+                <div class="contenedor_inferior">
+                    <canvas id="micanvas" width="500" height="500">
+                        Este texto se muestra para los navegadores no compatibles con canvas.
+                    </canvas>
+                </div>
+            </div>
+        </section>
+        <section id="sectionCategoriaSeleccionada" class="categoria_seleccionda hidden entretenimiento">
+            <header>
+                <h1 class="titulo_secciones">Categor&iacute;a</h1>
+            </header>
+            <div class="contenedor_seccion">
+                <div class="contenedor_inferior categorias">
+                    <div class="categorias">
+                        <h1 class="titulo_categoria"></h1>
+                        <div class="img_categoria"></div>
+                        <button class="jugar" type="button">Jugar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionPreguntas" class="preguntas hidden">
+            <header>
+                <h1 class="titulo_secciones">Preguntas</h1>
+            </header>
+            <div class="contenedor_seccion">
+                <div class="participantes">
+                    <div class="participante">
+                        <div class="avatar"><img src="images/icons/avatar_lady.png" border="0"></div>
+                        <div class="nombre"><p>Yo</p></div>
+                        <div class="puntos"><p>Puntos: <p class="myPoints">0</p></p></div>
+                    </div>
+                    <div class="participante oponente">
+                        <div class="avatar"><img src="images/icons/avatar_boy.png" border="0"></div>
+                        <div class="nombre"><p>Carlos</p></div>
+                        <div class="puntos"><p>Puntos: <p class="myOpponentPoints">0</p></p></div>
+                    </div>
+                </div>
+                <div id="divtablero" class="contenedor_inferior">
+                    <div class="contenedor_pregunta"><p id="txtPregunta"></p></div>
+                    <ul class="opciones_respuestas">
+                        <li class="respuesta"><p id="txtRespuesta1"></p></li>
+                        <li class="respuesta"><p id="txtRespuesta2"></p></li>
+                        <li class="respuesta"><p id="txtRespuesta3"></p></li>
+                        <li class="respuesta"><p id="txtRespuesta4"></p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="sectionResultado" class="resultado hidden">
+            <header>
+                <h1 class="titulo_secciones">Resultado</h1>
+            </header>
+            <div class="contenedor_seccion">
+                <div class="contenedor_inferior resultado ganaste">
+                    <div class="categorias">
+                        <img src="images/icons/ganaste.png" alt="" title="" border="0" />
+                        <h1 class="titulo_resultado"></h1>
+                        <button class="total_puntos" type="button">Total Puntos: <p class="myPoints">0</p></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>&copy; Copyright 2014 - Accenture - Argentina</footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/exercise.js"></script>
+    <script src="javascripts/helper.js"></script>
+</body>
+</html>

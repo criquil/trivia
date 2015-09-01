@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 Trivia</title>
+</head>
+<body>
+    <h1>HTML5 Trivia</h1>
+    <input type="button" id="cmdPlay" value="play" />
+    <input type="button" id="cmdDebug" value="debug" />
+    <div id="log"></div>
+    <div id="divTablero">   
+        <p id="txtPregunta"></p>
+        <p id="txtRespuesta1" class="respuesta"></p>
+        <p id="txtRespuesta2" class="respuesta"></p>
+        <p id="txtRespuesta3" class="respuesta"></p>
+        <p id="txtRespuesta4" class="respuesta"></p>
+    </div>
+    <div id="divDebug"></div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/client.js"></script>
+</body>
+</html>
